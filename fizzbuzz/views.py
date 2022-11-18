@@ -10,5 +10,5 @@ def fizzbuzz_list(request):
     
     fizzbuzz = Fizzbuzz.Objects.all()
     serializer = FizzbuzzSerializer(fizzbuzz, many=True) 
-    return JsonResponse(Serializer.data)
+    return JsonResponse(serializer.data)
 
