@@ -8,7 +8,7 @@ def fizzbuzz_list(request):
     #serialize the fizzy bubbly!
     #return json.....fizzy bubbly
     
-    fizzbuzz = Fizzbuzz.Objects.all()
+    fizzbuzz = Fizzbuzz.objects.all()
     serializer = FizzbuzzSerializer(fizzbuzz, many=True) 
-    return JsonResponse(serializer.data)
+    return JsonResponse(serializer.data, safe=False)
 
