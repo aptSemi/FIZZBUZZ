@@ -15,7 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from fizzbuzz import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('fizzbuzz/', views.fizzbuzz_list)
 ]
