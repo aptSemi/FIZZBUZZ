@@ -6,5 +6,5 @@ def fizzbuzz_list(request):
 
     fizzbuzz = Fizzbuzz.objects.all()
     serializer = FizzbuzzSerializer(fizzbuzz, many=True) 
-    return JsonResponse({'fizzbuzz': serializer.data}, safe=False)
+    return JsonResponse({'fizzbuzz': serializer.data})
 
