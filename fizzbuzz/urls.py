@@ -16,8 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from fizzbuzz import views
+from rest_framework.urlpatterns import format_suffix_patterns
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('fizzbuzz/', views.fizzbuzz_list)
+    path('fizzbuzz/', views.fizzbuzz_list),
+    path('fizzbuzz/<int:id>', views.fizzbuzz_detail)
 ]
+
+urlpatterns = format_suffix_patterns(urlpatterns)
