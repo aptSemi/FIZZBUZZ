@@ -9,3 +9,5 @@ Python3
 Django
 Django REST Framework
 
+Other tools used:
+Postman
