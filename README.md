@@ -1,5 +1,7 @@
 # fizzbuzz
 
+Archiving. To be used as reference only
+
 Xplor Assessment
 
 Simple REST API showcasing basic functionality
